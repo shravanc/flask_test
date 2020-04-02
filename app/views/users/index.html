@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sentiment Analysis</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+{% block content %}
+  <div class="container">
+    <h1>ಚಲನಚಿತ್ರ ವಿಮರ್ಶೆ</h1>
+    <a href="https://translate.google.com/#view=home&op=translate&sl=en&tl=kn" target="_blank">Find Kannada text in here</a>
+    <hr>
+    <form class="form-inline" action="{{ url_for('users.index') }}" method="post">
+      <div class="form-group">
+        <input type="textarea" name="comment" class="btn btn-default">
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Upload" class="btn btn-default">
+      </div>
+    </form>
+  </div>
+{% endblock %}
+
+
+
+</html>
+
